@@ -1,0 +1,21 @@
+﻿@model Kutse_App.Models.Guest
+
+@{
+    ViewBag.Title = "Tänani!";
+}
+<div>
+    <p>Tänan sind, @Model.Name</p>
+</div>
+<div>
+    @if (Model.WillAttend == true)
+    {
+        @:Oota sind väga!!!
+        <img src="~/Images/kutse.png">
+    }
+    else
+    {
+        @:Väga kurb!! Näeme seisel korral!!!
+        <img src="~/Images/kutse.png">
+    }
+</div>
+<h2>Thanks</h2>
